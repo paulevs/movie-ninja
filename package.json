@@ -1,0 +1,27 @@
+{
+  "name": "movie-ninja",
+  "version": "0.0.0",
+  "description": "Maintain a list of movies you want to watch",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulevs/movie-ninja.git"
+  },
+  "keywords": [
+    "movies",
+    "list"
+  ],
+  "author": "Paul Evans",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "29158be8230942d6c1b1edb7021ff4465d598adf",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.4.4"
+  }
+}
