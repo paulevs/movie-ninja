@@ -53,15 +53,22 @@ module.exports = function(grunt) {
     subgrunt: {
       all: ['test/gruntfile/*.js']
     },
+    webfont: {
+      icons: {
+          src: 'css/fonts/icons/*.svg',
+          dest: 'css/fonts'
+      }
+    },
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-webfont');
   //grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
   // "npm test" runs these tasks
-  grunt.registerTask('test', ['jshint', /*'nodeunit',*/ 'subgrunt']);
+  grunt.registerTask('test', ['jshint', /*'nodeunit',*/ 'subgrunt', 'webfont']);
 
   // Default task.
   grunt.registerTask('default', ['test']);
